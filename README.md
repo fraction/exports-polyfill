@@ -31,4 +31,4 @@ Please [open an issue](https://github.com/christianbundy/exports-polyfill/issues
 
 ## Contributing
 
-Fork the project, create a new branch, commit your changes, and open a pull request.
+Fork this repository, commit your changes, and [open a pull request](https://github.com/christianbundy/exports-polyfill/compare/).
