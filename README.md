@@ -1,4 +1,4 @@
-`module.exports` Polyfill
+Exports Polyfill
 =======================
 
-A JavaScript polyfill for using module.exports from Node.js.
+A JavaScript polyfill for using `module.exports` from Node.js.
