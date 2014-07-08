@@ -1,7 +1,7 @@
 Exports Polyfill
 =======================
 
-A JavaScript polyfill for accessing the global namespace with `module.exports`.
+A JavaScript polyfill for using the global namespace with `module.exports`.
 
 ## Usage
 
