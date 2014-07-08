@@ -25,6 +25,20 @@ module.exports = {
 console.log(exports.foo); // 42
 ```
 
+To change the namespace, set `module.namespace` to another object.
+
+```js
+var obj = {};
+module.namespace = obj;
+
+module.exports = {
+  foo: 42
+};
+
+console.log(obj.foo);     // 42
+console.log(exports.foo); // 42
+```
+
 ## Support
 
 Please [open an issue](https://github.com/fraction/exports-polyfill/issues/new) for questions and concerns.
