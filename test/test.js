@@ -1,4 +1,5 @@
-// Initialize an empty module object
+var assert = require("assert");
+
 module = {};
 
 // Default namespace is the top-level (global) object
@@ -27,3 +28,12 @@ Object.defineProperties(module, {
       }
     }
 });
+
+describe('module.exports', function(){
+  describe('set', function(){
+    it('should extend the global namespace', function(){
+      module.exports = { foo: 42 };
+      foo.should.equal(42);
+    });
+  })
+})
