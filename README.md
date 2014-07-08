@@ -5,17 +5,18 @@ A JavaScript polyfill for accessing the global namespace with `module.exports`.
 
 ## Usage
 
-Use `module.exports` as described in the [documentation](http://nodejs.org/api/modules.html#modules_module_exports) to **read/extend** the global namespace.
+Use `module.exports` as described in the [documentation](http://nodejs.org/api/modules.html#modules_module_exports) to **read/extend** the namespace.
 
 ```js
 module.exports = {
   foo: 42
 };
 
-console.log(foo); // 42
+console.log(module.exports.foo); // 42
+console.log(foo);                // 42
 ```
 
-Use the `exports` [shortcut](http://nodejs.org/api/modules.html#modules_exports_alias) to **read** the global namespace.
+Use the `exports` [shortcut](http://nodejs.org/api/modules.html#modules_exports_alias) to **read** the namespace.
 
 ```js
 module.exports = {
@@ -25,10 +26,11 @@ module.exports = {
 console.log(exports.foo); // 42
 ```
 
-To change the namespace, set `module.namespace` to another object.
+Use `module.namespace` to **change** the namespace.
 
 ```js
 var obj = {};
+
 module.namespace = obj;
 
 module.exports = {
