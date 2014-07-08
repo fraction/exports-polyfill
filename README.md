@@ -15,7 +15,7 @@ module.exports = {
 console.log(foo); // 42
 ```
 
-You can also use the `exports` [shortcut](http://nodejs.org/api/modules.html#modules_exports_alias) to **read** the global namespace.
+Use the `exports` [shortcut](http://nodejs.org/api/modules.html#modules_exports_alias) to **read** the global namespace.
 
 ```js
 module.exports = {
