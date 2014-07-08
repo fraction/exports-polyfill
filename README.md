@@ -27,8 +27,8 @@ console.log(exports.foo); // 42
 
 ## Support
 
-Please [open an issue](https://github.com/christianbundy/exports-polyfill/issues/new) for questions and concerns.
+Please [open an issue](https://github.com/fraction/exports-polyfill/issues/new) for questions and concerns.
 
 ## Contributing
 
-Fork this repository, commit your changes, and [open a pull request](https://github.com/christianbundy/exports-polyfill/compare/).
+Fork this repository, commit your changes, and [open a pull request](https://github.com/fraction/exports-polyfill/compare/).
