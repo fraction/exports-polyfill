@@ -5,7 +5,7 @@ A JavaScript polyfill for accessing the global namespace with `module.exports`.
 
 ## Usage
 
-Use `module.exports` as described in the Node.js [documentation](http://nodejs.org/api/modules.html#modules_module_exports) to *read/write to* the global namespace.
+Use `module.exports` as described in the [documentation](http://nodejs.org/api/modules.html#modules_module_exports) to **read/extend** the global namespace.
 
 ```js
 module.exports = {
@@ -15,7 +15,7 @@ module.exports = {
 console.log(foo); // 42
 ```
 
-You can also use the `exports` [shortcut](http://nodejs.org/api/modules.html#modules_exports_alias) to *read* the global namespace.
+You can also use the `exports` [shortcut](http://nodejs.org/api/modules.html#modules_exports_alias) to **read** the global namespace.
 
 ```js
 module.exports = {
